@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>News Reader.API</name>
+    </assembly>
+    <members>
+        <member name="M:News_Reader.Controllers.CategoryController.List">
+            <summary>
+            Gets a list of categories ordered by name
+            </summary>
+        </member>
+        <member name="M:News_Reader.Controllers.CategoryController.Get(System.Int64)">
+            <summary>
+            Gets a specific category by its unique id
+            </summary>
+            <param name="id" example="1">The category id</param>
+        </member>
+        <member name="M:News_Reader.Controllers.CategoryController.Post(Contracts.CategoryDTO)">
+            <summary>
+            Inserts a new category in the database
+            </summary>
+        </member>
+        <member name="M:News_Reader.Controllers.CategoryController.Put(Contracts.CategoryDTO)">
+            <summary>
+            Updates a category in the database
+            </summary>
+        </member>
+        <member name="M:News_Reader.Controllers.CategoryController.Delete(System.Int64)">
+            <summary>
+            Deletes a category in the database
+            </summary>
+            <param name="id" example="1">The category id</param>
+        </member>
+        <member name="M:News_Reader.Controllers.RSSFeedController.List">
+            <summary>
+            Gets a list of feeds ordered by name
+            </summary>
+        </member>
+        <member name="M:News_Reader.Controllers.RSSFeedController.Get(System.Int64)">
+            <summary>
+            Gets a specific RSSFeed by its unique id
+            </summary>
+            <param name="id" example="1">The RSSFeed id</param>
+        </member>
+        <member name="M:News_Reader.Controllers.RSSFeedController.Post(Contracts.RSSFeedDTO)">
+            <summary>
+            Inserts a new RSSFeed in the database
+            </summary>
+        </member>
+        <member name="M:News_Reader.Controllers.RSSFeedController.Put(Contracts.RSSFeedDTO)">
+            <summary>
+            Updates a RSSFeed in the database
+            </summary>
+        </member>
+        <member name="M:News_Reader.Controllers.RSSFeedController.Delete(System.Int64)">
+            <summary>
+            Deletes a RSSFeed in the database
+            </summary>
+            <param name="id" example="1">The RSSFeed id</param>
+        </member>
+        <member name="M:News_Reader.Controllers.RSSFeedController.ListNewsByRSSFeed(System.Int64,System.Nullable{System.DateTimeOffset},System.String)">
+            <summary>
+            Gets ten news from a single feed
+            </summary>
+            <param name="feedId" example="1">The RSSFeed id</param>
+            <param name="listFromParam">Take only news that are only older than this date</param>
+            <param name="filter">Take only news whose title matches this filter</param>
+        </member>
+        <member name="M:News_Reader.Controllers.RSSFeedController.ListNewsByCategory(System.Int64,System.Nullable{System.DateTimeOffset},System.String)">
+            <summary>
+            Gets ten news from all feeds in a given category
+            </summary>
+            <param name="categoryId" example="1">The FeedCategory id</param>
+            <param name="listFromParam">Take only news that are only older than this date</param>
+            <param name="filter">Take only news whose title matches this filter</param>
+        </member>
+        <member name="M:News_Reader.Controllers.RSSFeedController.ListNewsFromAllFeeds(System.Nullable{System.DateTimeOffset},System.String)">
+            <summary>
+            Gets ten news from all subscribed feeds
+            </summary>
+            <param name="listFromParam">Take only news that are only older than this date</param>
+            <param name="filter">Take only news whose title matches this filter</param>
+        </member>
+    </members>
+</doc>

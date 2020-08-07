@@ -1,0 +1,13 @@
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.DAL\bin\Debug\netcoreapp3.1\News Reader.DAL.deps.json
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.DAL\bin\Debug\netcoreapp3.1\News Reader.DAL.dll
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.DAL\obj\Debug\netcoreapp3.1\News Reader.DAL.csprojAssemblyReference.cache
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.DAL\obj\Debug\netcoreapp3.1\News Reader.DAL.AssemblyInfoInputs.cache
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.DAL\obj\Debug\netcoreapp3.1\News Reader.DAL.AssemblyInfo.cs
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.DAL\bin\Debug\netcoreapp3.1\News Reader.DAL.pdb
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.DAL\obj\Debug\netcoreapp3.1\News Reader.DAL.dll
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.DAL\obj\Debug\netcoreapp3.1\News Reader.DAL.pdb
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.DAL\bin\Debug\netcoreapp3.1\News Reader.DAL.runtimeconfig.json
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.DAL\bin\Debug\netcoreapp3.1\News Reader.DAL.runtimeconfig.dev.json
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.DAL\bin\Debug\netcoreapp3.1\Contracts.dll
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.DAL\bin\Debug\netcoreapp3.1\Contracts.pdb
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.DAL\obj\Debug\netcoreapp3.1\News Reader.DAL.csproj.CopyComplete

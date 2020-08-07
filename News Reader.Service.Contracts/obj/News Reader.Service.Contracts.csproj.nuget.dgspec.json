@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Piter Machado\\source\\repos\\News Reader\\News Reader.Service.Contracts\\News Reader.Service.Contracts.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Piter Machado\\source\\repos\\News Reader\\News Reader.Service.Contracts\\News Reader.Service.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Piter Machado\\source\\repos\\News Reader\\News Reader.Service.Contracts\\News Reader.Service.Contracts.csproj",
+        "projectName": "News Reader.Service.Contracts",
+        "projectPath": "C:\\Users\\Piter Machado\\source\\repos\\News Reader\\News Reader.Service.Contracts\\News Reader.Service.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Piter Machado\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Piter Machado\\source\\repos\\News Reader\\News Reader.Service.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Piter Machado\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

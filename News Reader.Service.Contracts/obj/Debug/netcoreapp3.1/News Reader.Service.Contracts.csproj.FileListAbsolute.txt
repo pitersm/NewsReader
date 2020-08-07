@@ -1,0 +1,8 @@
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.Service.Contracts\bin\Debug\netcoreapp3.1\News Reader.Service.Contracts.deps.json
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.Service.Contracts\bin\Debug\netcoreapp3.1\News Reader.Service.Contracts.dll
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.Service.Contracts\bin\Debug\netcoreapp3.1\News Reader.Service.Contracts.pdb
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.Service.Contracts\obj\Debug\netcoreapp3.1\News Reader.Service.Contracts.csprojAssemblyReference.cache
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.Service.Contracts\obj\Debug\netcoreapp3.1\News Reader.Service.Contracts.AssemblyInfoInputs.cache
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.Service.Contracts\obj\Debug\netcoreapp3.1\News Reader.Service.Contracts.AssemblyInfo.cs
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.Service.Contracts\obj\Debug\netcoreapp3.1\News Reader.Service.Contracts.dll
+C:\Users\Piter Machado\source\repos\News Reader\News Reader.Service.Contracts\obj\Debug\netcoreapp3.1\News Reader.Service.Contracts.pdb
