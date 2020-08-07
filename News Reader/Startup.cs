@@ -108,6 +108,11 @@ namespace News_Reader
                     pattern: "{controller}/{action=Index}/{id?}");
             });
 
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "RSS Feed Viewer API");
+            });
+
             app.UseSpa(spa =>
             {
                 // To learn more about options for serving an Angular SPA from ASP.NET Core,
@@ -119,12 +124,6 @@ namespace News_Reader
                 {
                     spa.UseAngularCliServer(npmScript: "start");
                 }
-            });
-
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json",
-                    "RSS Feed Viewer API");
             });
         }
     }
