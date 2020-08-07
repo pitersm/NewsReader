@@ -1,0 +1,10 @@
+.news-item {
+    display: inline-block;
+    padding: 10px;
+    width: 80%;
+}
+
+.news-right {
+    display: inline-block;
+    width: 20%;
+}

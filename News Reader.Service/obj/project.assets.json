@@ -688,11 +688,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\News Reader.Service\\News Reader.Service.csproj",
+      "projectUniqueName": "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\News Reader.Service\\News Reader.Service.csproj",
       "projectName": "News Reader.Service",
-      "projectPath": "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\News Reader.Service\\News Reader.Service.csproj",
+      "projectPath": "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\News Reader.Service\\News Reader.Service.csproj",
       "packagesPath": "C:\\Users\\Piter Machado\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\News Reader.Service\\obj\\",
+      "outputPath": "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\News Reader.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -710,11 +710,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\Contracts\\Contracts.csproj": {
-              "projectPath": "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\Contracts\\Contracts.csproj"
+            "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\Contracts\\Contracts.csproj"
             },
-            "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\News Reader.DAL\\News Reader.DAL.csproj": {
-              "projectPath": "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\News Reader.DAL\\News Reader.DAL.csproj"
+            "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\News Reader.DAL\\News Reader.DAL.csproj": {
+              "projectPath": "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\News Reader.DAL\\News Reader.DAL.csproj"
             }
           }
         }

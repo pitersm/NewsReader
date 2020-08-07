@@ -1,0 +1,65 @@
+<p-toast [style]="{marginTop: '80px'}"></p-toast>
+
+<h2 style="text-align:center">RSS Feed List</h2>
+<p *ngIf="rssFeeds.length > 0">Please click the record to view options.</p>
+
+<p-table [value]="rssFeeds" selectionMode="single" [(selection)]="selectedRssFeed" (onRowSelect)="onRowSelect($event)"
+  [paginator]="true"  [rows]="10" [responsive]="true" *ngIf="rssFeeds.length > 0" autoLayout="true">
+    <ng-template pTemplate="header" let-columns>
+      <tr>
+        <th>RSS Feed Name</th>
+        <th>RSS Feed URL</th>
+        <th>RSS Feed Category</th>
+    </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rssFeed>
+      <tr [pSelectableRow]="rssFeed">
+          <td>{{rssFeed.name}}</td>
+          <td>{{rssFeed.xmlFileAddress}}</td>
+          <td>{{rssFeed.category.name}}</td>
+      </tr>
+    </ng-template>
+</p-table>
+<p *ngIf="rssFeeds.length === 0">
+  No RSS feeds have been added so far.
+  <br>
+</p>
+
+<br>
+<br>
+
+<p-card>
+  <div class="row">
+    <div class="col-sm-6 col-lg-4 col-md-4">
+      <p>Feed Name</p>
+        <input type="text" name="name" id="name" pInputText maxlength=50 [(ngModel)]="feedName"/>
+    </div>
+    <div class="col-sm-6 col-lg-4 col-md-4">
+      <p>Feed URL - Has to be an XML File</p>
+        <input type="text" name="url" id="url" pInputText [(ngModel)]="feedURL"/>
+    </div>
+    <div class="col-sm-6 col-lg-4 col-md-4">
+      <p>Feed Category</p>
+      <p-dropdown [options]="categories" optionLabel="name" [(ngModel)]="feedCategory" [autoDisplayFirst]="false"></p-dropdown>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-lg-3 col-md-4">
+      <button type="button" pButton icon="fa fa-plus" (click)="addRSS()" label="Add RSS Feed"></button>
+    </div>
+  </div>
+</p-card>
+
+<p-dialog *ngIf="selectedRssFeed" header="RSS Feed Details - {{selectedRssFeed.name}}" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true">
+  <div class="ui-g ui-fluid" >
+    What do you wish to do with the selected RSS feed?
+  </div>
+  <p-footer>
+      <div class="ui-dialog-buttonpane ui-helper-clearfix">
+          <button type="button" pButton icon="fa fa-close" class="ui-button-danger" (click)="deleteRSSFeed(selectedRssFeed.id)" label="Delete RSS feed"></button>
+          <button type="button" pButton icon="fa fa-check" (click)="showNews()" label="View News"></button>
+      </div>
+  </p-footer>
+</p-dialog>
+
+<p-toast key="msg"></p-toast>

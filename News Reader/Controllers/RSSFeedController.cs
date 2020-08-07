@@ -103,13 +103,13 @@ namespace News_Reader.Controllers
         /// Gets ten news from a single feed
         /// </summary>
         /// <param name="feedId" example="1">The RSSFeed id</param>
-        /// <param name="listFromParam">Take only news that are only older than this date</param>
+        /// <param name="fromDate">Take only news that are only older than this date</param>
         /// <param name="filter">Take only news whose title matches this filter</param>
         //2019-07-26T00:00:00"
-        [HttpGet("ListNews")]
-        public async Task<ActionResult<NewsQueryDTO>> ListNewsByRSSFeed(long feedId, DateTimeOffset? listFromParam, string filter)
+        [HttpGet("ListNewsByFeed")]
+        public async Task<ActionResult<NewsQueryDTO>> ListNewsByRSSFeed(long feedId, DateTimeOffset? fromDate, string filter)
         {
-            var value = await _RSSFeedService.ListNewsByRSSFeed(feedId, listFromParam, filter);
+            var value = await _RSSFeedService.ListNewsByRSSFeed(feedId, fromDate, filter);
             if (value == null)
             {
                 return NotFound("There are no news corresponding to the matching filters. Please try again with another set of parameters.");
@@ -122,13 +122,13 @@ namespace News_Reader.Controllers
         /// Gets ten news from all feeds in a given category
         /// </summary>
         /// <param name="categoryId" example="1">The FeedCategory id</param>
-        /// <param name="listFromParam">Take only news that are only older than this date</param>
+        /// <param name="fromDate">Take only news that are only older than this date</param>
         /// <param name="filter">Take only news whose title matches this filter</param>
         //2019-07-26T00:00:00"
         [HttpGet("ListByCategory")]
-        public ActionResult<NewsQueryDTO> ListNewsByCategory(long categoryId, DateTimeOffset? listFromParam, string filter)
+        public ActionResult<NewsQueryDTO> ListNewsByCategory(long categoryId, DateTimeOffset? fromDate, string filter)
         {
-            var value = _RSSFeedService.ListNewsByCategory(categoryId, listFromParam, filter);
+            var value = _RSSFeedService.ListNewsByCategory(categoryId, fromDate, filter);
             if (value == null)
             {
                 return NotFound("There are no news corresponding to the matching filters. Please try again with another set of parameters.");
@@ -140,13 +140,13 @@ namespace News_Reader.Controllers
         /// <summary>
         /// Gets ten news from all subscribed feeds
         /// </summary>
-        /// <param name="listFromParam">Take only news that are only older than this date</param>
+        /// <param name="fromDate">Take only news that are only older than this date</param>
         /// <param name="filter">Take only news whose title matches this filter</param>
         //2019-07-26T00:00:00"
-        [HttpGet("ListAllFeeds")]
-        public ActionResult<NewsQueryDTO> ListNewsFromAllFeeds(DateTimeOffset? listFromParam, string filter)
+        [HttpGet("ListFromAllFeeds")]
+        public ActionResult<NewsQueryDTO> ListNewsFromAllFeeds(DateTimeOffset? fromDate, string filter)
         {
-            var value = _RSSFeedService.ListNews(listFromParam, filter);
+            var value = _RSSFeedService.ListNews(fromDate, filter);
             if (value == null)
             {
                 return NotFound("There are no news corresponding to the matching filters. Please try again with another set of parameters.");

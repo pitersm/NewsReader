@@ -1,0 +1,6 @@
+<h1>News From {{rssFeed.name}}</h1>
+<br>
+<app-news-reader [newsList]="newsList" (loadNewsLazy)="loadNewsLazy($event)" 
+    (loadMoreNews)="loadMoreNews()" (filterNews)="filterNews($event)">
+</app-news-reader>
+<h2 *ngIf="newsList.length === 0">The selected feed has no news to show.</h2>

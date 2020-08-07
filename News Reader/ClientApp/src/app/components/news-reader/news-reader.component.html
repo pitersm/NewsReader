@@ -1,0 +1,29 @@
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="Search news" [(ngModel)]="filter">
+    <div class="input-group-append">
+        <button class="btn btn-secondary" type="button" (click)="onFilter()">
+        <i class="fa fa-search"></i>
+        </button>
+    </div>
+</div>
+<br>
+<p-virtualScroller  [value]="newsList" scrollHeight="700px" [itemSize]="130" [rows]="10" 
+        [lazy]="true" (onLazyLoad)="onLoadNewsLazy($event)">
+    <ng-template pTemplate="header">
+        News From Your Subscriptions
+    </ng-template>
+    <ng-template let-newsItem pTemplate="item" let-i="index">
+        <div class="news-item">
+            <h6><b>{{newsItem.title}}</b></h6>
+            <p>{{newsItem.summary}}</p>
+            <div class="news-link"><a href="{{newsItem.link}}" target="_blank">{{newsItem.link}}</a></div>
+        </div>
+        <div class="news-right">{{newsItem.publishDate}}</div>
+    </ng-template>
+    <p-footer>
+        <a (click)="onLoadMoreNews()" href="javascript:void(0)">Load More News</a>
+    </p-footer>
+    <ng-template let-car pTemplate="loadingItem">
+        <p>Loading...</p>
+    </ng-template>
+</p-virtualScroller>

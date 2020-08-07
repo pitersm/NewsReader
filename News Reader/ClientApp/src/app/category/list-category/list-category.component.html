@@ -1,0 +1,42 @@
+<p-toast [style]="{marginTop: '80px'}"></p-toast>
+
+<h2 style="text-align:center">Category List</h2>
+<p *ngIf="categories.length > 0">Please click the record to view options.</p>
+
+<p-table [value]="categories" selectionMode="single" [(selection)]="selectedCategory" (onRowSelect)="onRowSelect($event)"
+  [paginator]="true"  [rows]="10" [responsive]="true" *ngIf="categories.length > 0">
+    <ng-template pTemplate="header" let-columns>
+      <tr>
+        <th>Category Name</th>
+        <th></th>
+    </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-category>
+      <tr [pSelectableRow]="category">
+          <td>{{category.name}}</td>
+          <td><a>View the news from this category</a></td>
+      </tr>
+    </ng-template>
+    <!-- <ng-template pTemplate="summary" let-category>
+      <div style="text-align:left">
+          <button type="button" pButton icon="fa fa-plus" (click)="showAdd()" label="Add New Category"></button>
+      </div>
+  </ng-template> -->
+</p-table>
+<p *ngIf="categories.length === 0">
+  No categories have been added so far.
+  <br>
+<button type="button" pButton icon="fa fa-plus" (click)="showAdd()" label="Add Category"></button>
+</p>
+
+<p-dialog *ngIf="selectedCategory" header="Category Details - {{selectedCategory.name}}" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true">
+  <div class="ui-g ui-fluid" >
+    What do you wish to do with the selected category?
+  </div>
+  <p-footer>
+      <div class="ui-dialog-buttonpane ui-helper-clearfix">
+          <button type="button" pButton icon="fa fa-close" class="ui-button-danger" (click)="deleteCategory(selectedCategory.id)" label="Delete Category"></button>
+          <button type="button" pButton icon="fa fa-check" (click)="showNews()" label="View News"></button>
+      </div>
+  </p-footer>
+</p-dialog>

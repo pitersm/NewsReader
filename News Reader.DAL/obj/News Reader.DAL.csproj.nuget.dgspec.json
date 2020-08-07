@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\News Reader.DAL\\News Reader.DAL.csproj": {}
+    "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\News Reader.DAL\\News Reader.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\Contracts\\Contracts.csproj": {
+    "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\Contracts\\Contracts.csproj",
+        "projectPath": "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\Contracts\\Contracts.csproj",
         "packagesPath": "C:\\Users\\Piter Machado\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\News Reader.DAL\\News Reader.DAL.csproj": {
+    "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\News Reader.DAL\\News Reader.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\News Reader.DAL\\News Reader.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\News Reader.DAL\\News Reader.DAL.csproj",
         "projectName": "News Reader.DAL",
-        "projectPath": "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\News Reader.DAL\\News Reader.DAL.csproj",
+        "projectPath": "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\News Reader.DAL\\News Reader.DAL.csproj",
         "packagesPath": "C:\\Users\\Piter Machado\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\News Reader.DAL\\obj\\",
+        "outputPath": "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\News Reader.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -83,8 +83,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\Piter Machado\\Source\\Repos\\Personal\\NewsReader\\Contracts\\Contracts.csproj"
+              "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Piter Machado\\source\\repos\\Personal\\NewsReader\\Contracts\\Contracts.csproj"
               }
             }
           }

@@ -1,0 +1,9 @@
+<h1>News By Category: {{category.name}}</h1>
+<br>
+<ul class="">
+    <li *ngFor="let feed of category.rssFeeds"><b>{{feed.name}}</b></li>
+</ul>
+<app-news-reader *ngIf="category.rssFeeds.length > 0" [newsList]="newsList" (loadNewsLazy)="loadNewsLazy($event)" 
+    (loadMoreNews)="loadMoreNews()" (filterNews)="filterNews($event)">
+</app-news-reader>
+<h2 *ngIf="category.rssFeeds.length === 0">Please add news feeds to this category.</h2>
